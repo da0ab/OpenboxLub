@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#repl OLDtext NEWtext file(s)
+
+search=${1//\//\\/}
+replace=${2//\//\\/}
+shift 2
+sed -i "s/$search/$replace/g" "$@"

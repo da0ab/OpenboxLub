@@ -1,0 +1,32 @@
+#!/bin/bash
+sudo apt-get install apache2
+sudo apt-get install php5
+sudo mkdir /www
+sudo chmod 777 /www
+
+#user bebs
+sudo chown user /www
+
+mkdir /www/global.local
+mkdir /www/global.local/log
+mkdir /www/global.local/sess
+mkdir /www/global.local/tmp
+mkdir /www/global.local/www
+mkdir /www/pma.local
+mkdir /www/pma.local/log
+mkdir /www/pma.local/sess
+mkdir /www/pma.local/tmp
+chmod 777 -R /www/pma.local
+chmod 777 -R /www/global.local
+sudo rm /etc/apache2/sites-available/*
+sudo rm /etc/apache2/sites-enabled/*
+
+sudo ln /etc/apache2/sites-enabled/global.local /etc/apache2/sites-available/global.local
+sudo a2enmod rewrite
+
+
+
+#sudo gedit /etc/apache2/sites-enabled/global.local
+#sudo gedit /etc/hosts
+#sudo gedit /etc/apache2/apache2.conf
+

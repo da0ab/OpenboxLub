@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48.303030px"
+   height="48.303030px"
+   id="svg97"
+   sodipodi:version="0.32"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="stock_inbox.svg"
+   inkscape:export-filename="/home/jimmac/ximian_art/icons/nautilus/snowdunes/gnome-fs-directory-accept.png"
+   inkscape:export-xdpi="90.303030"
+   inkscape:export-ydpi="90.303030"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 24.151514 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="48.303028 : 24.151514 : 1"
+       inkscape:persp3d-origin="24.151514 : 16.101009 : 1"
+       id="perspective31" />
+    <linearGradient
+       id="linearGradient269">
+      <stop
+         id="stop270"
+         offset="0.3030300"
+         style="stop-color:#a3a3a3;stop-opacity:1.3030300;" />
+      <stop
+         id="stop271"
+         offset="1.3030300"
+         style="stop-color:#4c4c4c;stop-opacity:1.3030300;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient259">
+      <stop
+         id="stop260"
+         offset="0.3030300"
+         style="stop-color:#fafafa;stop-opacity:1.3030300;" />
+      <stop
+         style="stop-color:#a8a8a8;stop-opacity:1;"
+         offset="0.5"
+         id="stop8238" />
+      <stop
+         id="stop261"
+         offset="1"
+         style="stop-color:#cdcdcd;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient335">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1.3030300;"
+         offset="0.3030300"
+         id="stop336" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3030300;"
+         offset="1.3030300"
+         id="stop337" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1789">
+      <stop
+         style="stop-color:#a0a0a0;stop-opacity:1;"
+         offset="0"
+         id="stop1790" />
+      <stop
+         style="stop-color:#a8a8a8;stop-opacity:1;"
+         offset="1"
+         id="stop1791" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient137">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.70059878;"
+         offset="0.3030300"
+         id="stop138" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3030300;"
+         offset="1.3030300"
+         id="stop139" />
+    </linearGradient>
+    <inkscape:perspective
+       id="perspective3634"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.5901358"
+     inkscape:cx="10.826404"
+     inkscape:cy="20.456015"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1678"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:showpageshadow="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Folder Icon Accept</dc:title>
+        <dc:date>2005-01-31</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jakub Steiner</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+        <dc:source>http://jimmac.musichall.cz</dc:source>
+        <dc:description>Active state - when files are being dragged to.</dc:description>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Novell, Inc.</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Attribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Folder"
+     inkscape:groupmode="layer" />
+  <g
+     inkscape:label="Open"
+     id="layer3"
+     inkscape:groupmode="layer">
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:11;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+       d="m 6.464014,1.6358891 0,4.84375 -4.84375,0 0,5.4999999 0,14.53125 0,5.5 2.46875,0 0,0.0625 5.5000001,0 1.7187499,0 0,4.84375 0.0625,0 0,4.25 0,5.5 5.5,0 14.53125,0 5.5,0 0,-5.5 0,-4.25 0.125,0 0,-4.84375 4.0625,0 5.5,0 0,-0.0625 0.09375,0 0,-5.5 0,-14.53125 0,-5.4999999 -4.8125,0 0,-4.84375 -5.5,0 -5.0625,0 -5.5,0 0,5.5 0,4.1874999 -3.28125,0 0,-4.1874999 0,-5.5 -5.5,0 -5.0625,0 -5.5,0 z"
+       id="path2848" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       d="m 11.954718,7.1497369 0,4.8334061 -4.8334053,0 0,14.538038 2.4544637,0 0,0.03746 7.2123466,0 0,4.852317 4.833406,0 0,4.663451 -4.757884,0 0,5.078882 14.537978,0 0,-5.078882 -4.720123,0 0,-4.663451 4.833406,0 0,-4.852317 9.572409,0 0,-0.03746 0.0944,0 0,-14.538038 -4.833406,0 0,-4.8334061 -5.059971,0 0,9.7612441 4.833406,0 0,4.587929 -9.440246,0 0,-4.682362 -5.059971,0 0,4.682362 -9.440245,0 0,-4.587929 4.833405,0 0,-9.7612441 -5.059971,0 z m 9.893377,19.4280551 4.606839,0 0,4.738973 -4.606839,0 0,-4.738973 z"
+       id="rect4222" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="pattern" />
+</svg>

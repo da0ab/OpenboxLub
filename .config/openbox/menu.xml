@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="Run Program * A+F2">
+			<action name="Execute">
+				<execute>
+					gmrun
+				</execute>
+			</action>
+		</item>
+		<menu id="Debian"/>
+		<separator/>
+		<item label="Terminal * Su+w">
+			<action name="Execute">
+				<execute>
+					urxvt
+				</execute>
+			</action>
+		</item>
+		<item label="Update-manager">
+			<action name="Execute">
+				<execute>
+                                gksudo   'update-manager --no-focus-on-ma'
+                                </execute>
+			</action>
+		</item>
+                <item label="Text Editor * Su+v">
+			<action name="Execute">
+				<execute>
+					gvim
+				</execute>
+			</action>
+		</item>
+                <item label="File Manager * Su+q">
+			<action name="Execute">
+				<execute>
+				pcmanfm
+                                </execute>
+			</action>
+		</item>
+		<item label="Synaptic * C+A+s">
+			<action name="Execute">
+				<execute>
+					gksudo synaptic
+				</execute>
+			</action>
+		</item>
+                <separator/>
+		<item label="G-Chrome">
+			<action name="Execute">
+				<execute>
+					google-chrome
+				</execute>
+			</action>
+		</item>
+		<item label="Chromium * Su+g">
+			<action name="Execute">
+				<execute>
+                                        chromium-browser
+				</execute>
+			</action>
+		</item>
+
+		<item label="Firefox * C+A+f">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
+		<item label="Filezilla * Su+f">
+			<action name="Execute">
+				<execute>
+					filezilla
+				</execute>
+			</action>
+		</item>
+		<item label="Inkscape * C+A+i">
+			<action name="Execute">
+				<execute>
+					inkscape
+				</execute>
+			</action>
+		</item>
+		<item label="Gcolor2 * Su+i">
+			<action name="Execute">
+				<execute>
+					gcolor2
+				</execute>
+			</action>
+		</item>
+		<item label="Gimp * C+A+g">
+			<action name="Execute">
+				<execute>
+					gimp
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="File Manager SUDO">
+			<action name="Execute">
+				<execute>
+					gksudo 'pcmanfm'
+				</execute>
+			</action>
+		</item>
+		<item label="x-terminal">
+			<action name="Execute">
+				<execute>
+					x-terminal-emulator
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="terminal" label="Terminal Apps →">
+			<item label="vim - Text Editor">
+				<action name="Execute">
+					<execute>
+						urxvt -e vim
+					</execute>
+				</action>
+			</item>
+			<item label="mc — File Manager *C+A+m">
+				<action name="Execute">
+					<execute>
+						urxvt -e mc
+					</execute>
+				</action>
+			</item>
+                	<item label="htop — Sistem Manager *C+A+Del">
+				<action name="Execute">
+					<execute>
+						urxvt -e htop
+					</execute>
+				</action>
+			</item>
+
+			<item label="moc — Music Player">
+				<action name="Execute">
+					<execute>
+						urxvt -e mocp
+					</execute>
+				</action>
+			</item>
+
+		</menu>
+		<separator/>
+		<menu id="obConfig" label="Openbox Config">
+			<item label="Edit menu.xml">
+				<action name="Execute">
+					<execute>
+							gvim ~/.config/openbox/menu.xml
+					</execute>
+				</action>
+			</item>
+			<item label="Edit rc.xml">
+				<action name="Execute">
+					<execute>
+							gvim ~/.config/openbox/rc.xml
+					</execute>
+				</action>
+			</item>
+			<item label="Edit autostart.sh">
+				<action name="Execute">
+					<execute>
+							gvim ~/.config/openbox/autostart.sh
+					</execute>
+				</action>
+			</item>
+			<item label="GUI Key tool">
+				<action name="Execute">
+					<execute>
+							~/.config/openbox/obkey-dev/obkey
+					</execute>
+				</action>
+			</item>
+			<item label="GUI Config Tool">
+				<action name="Execute">
+					<execute>
+							obconf
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="preferences" label="Preferences">
+			<item label="Edit .xbindkeysrc">
+				<action name="Execute">
+					<execute>
+						gvim ~/.xbindkeysrc
+					</execute>
+				</action>
+			</item>
+			<item label="Edit .Xdefaults urxvt">
+				<action name="Execute">
+					<execute>
+						gvim ~/.Xdefaults
+					</execute>
+				</action>
+			</item>
+			<item label="Edit .bashrc">
+				<action name="Execute">
+					<execute>
+						gvim ~/.bashrc
+					</execute>
+				</action>
+			</item>
+			<item label="Edit .gmrunrc">
+				<action name="Execute">
+					<execute>
+						gvim ~/.gmrunrc
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="db becap">
+			<action name="Execute">
+				<execute>
+					~/bin/becap
+				</execute>
+			</action>
+		</item>
+			<separator/>
+		<item label="Reconfigure">
+			<action name="Reconfigure"/>
+		</item>
+
+		<item label="Restart openbox">
+			<action name="Restart"/>
+		</item>
+			<separator/>
+                <item label="Logout">
+			<action name="Execute">
+				<execute>
+					openbox --exit
+				</execute>
+			</action>
+		</item>
+		<item label="Reboot">
+			<action name="Execute">
+				<execute>
+					urxvt -e shutdown -r now
+				</execute>
+			</action>
+		</item>
+                                <item label="Halt">
+			<action name="Execute">
+				<execute>
+					urxvt -e shutdown -h now
+				</execute>
+			</action>
+		</item>
+
+	</menu>
+</openbox_menu>

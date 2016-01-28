@@ -1,0 +1,3 @@
+#!/bin/bash
+perl -pi -e 's/\/nobr/\/span/g' *.htm*
+perl -pi -e 's/nobr/span class="Nobr"/g' *.htm*

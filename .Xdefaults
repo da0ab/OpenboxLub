@@ -1,0 +1,38 @@
+URxvt*perl-ext: tabbed
+URxvt*scrollBar: False
+URxvt*saveLines: 5000
+URxvt.font: xft:Terminus:style=Bold:size=14
+URxvt*geometry: 198x30
+
+URxvt*background:#A29F9F
+URxvt*foreground: #000000
+
+  URxvt*color1:  #7A7979
+  URxvt*color2:  #00aa00
+  URxvt*color3:  #7A7979
+  URxvt*color4:  #0000aa
+  URxvt*color5:  #aa00aa
+  URxvt*color6:  #00aaaa
+  URxvt*color7:  #aaaaaa
+  URxvt*color8:  #555555
+  URxvt*color9:  #ff5555
+  URxvt*color10: #55ff55
+  URxvt*color11: #ffff55
+  URxvt*color12: #5555ff
+  URxvt*color13: #ff55ff
+  URxvt*color14: #55ffff
+  URxvt*color15: #ffffff
+
+urxvt.urlLauncher: google-chrome
+urxvt.perl-ext-common: selection-autotransform,mark-urls
+
+yeahconsole*term: urxvt
+yeahconsole*restart: 1
+yeahconsole*toggleKey: None+Menu
+yeahconsole*keyFull: Alt+F8
+yeahconsole*aniDelay: 10
+yeahconsole*foreground: grey
+yeahconsole*background: black
+yeahconsole*xOffset: 100
+yeahconsole*screenWidth:1200
+yeahconsole*consoleHeight:27

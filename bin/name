@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ sh re/blank_rename.sh ;  sh re/translit.sh ; bash re/registr.sh

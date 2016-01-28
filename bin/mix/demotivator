@@ -1,0 +1,8 @@
+#!/bin/bash
+convert  foto.jpg -scale 500x \
+  -bordercolor '#fff' -border 1 \
+  -bordercolor '#000' -border 16 \
+  -background '#000' -fill '#eee' -pointsize 32 label:'Заголовок' -gravity center -append \
+  -border 5 -pointsize 15 label:'Описание демотиватора' -append \
+  -border 16 \
+  -bordercolor '#333' -border 1 foto_demotivator.jpg

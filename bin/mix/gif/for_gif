@@ -1,0 +1,3 @@
+#!/bin/bash
+convert -adjoin  -dispose Background -delay 5 *.png animation.gif 
+

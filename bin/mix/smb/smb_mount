@@ -1,0 +1,13 @@
+
+/etc/fstab
+//192.168.0.131/clipart ~/clipart -o rw,iocharset=utf8 0 0
+
+//192.168.0.19/peresylka /home/razuvaev/peresylka cifs auto,users,rw 0 0
+//192.168.0.131/Archive10 /home/razuvaev/Archive/Archive10 cifs auto,users,rw 0 0
+//192.168.0.131/Archive11 /home/razuvaev/Archive/Archive11 cifs auto,users,rw 0 0
+//192.168.0.131/Archive5 /home/razuvaev/Archive/Archive5 cifs auto,users,rw 0 0
+//192.168.0.20/Raid_C /home/razuvaev/Raid_C  cifs auto,users,rw 0 0
+#//192.168.0.131/clipart /home/razuvaev/clipart cifs auto,users,rw 0 0
+
+smbmount //192.168.0.131/clipart ~/clipart -o rw,iocharset=utf8
+sudo smbumount ~/clipart

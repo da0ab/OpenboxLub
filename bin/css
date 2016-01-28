@@ -1,0 +1,21 @@
+#!/bin/bash
+cp ~/Dropbox/worck/verstka/index.html ./index.html
+mkdir css
+mkdir i
+mkdir tmp
+cp ~/Dropbox/worck/verstka/pic1.png ./tmp/pic1.png
+touch ./css/style.css
+echo "
+h2 {
+        padding:5px;
+        background:#eee;
+        font-size:25px;
+}
+
+footer {
+        margin-top:20px;
+        padding:20px;
+        color:#fff;
+        background:#222;
+}" > ./css/style.css
+

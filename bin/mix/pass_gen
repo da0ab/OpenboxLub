@@ -1,0 +1,3 @@
+#!/bin/bash
+head -c 6 < /dev/urandom| uuencode -m 1 | tail -2 | head -1
+

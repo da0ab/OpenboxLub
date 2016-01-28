@@ -1,0 +1,7 @@
+#!/bin/bash
+PDF_FILES=*.htm*
+for f in $PDF_FILES
+do
+filename=${f%.*}
+echo "<li><a href=\"$filename.html\">$filename</a></li>" >> menu.txt
+done
