@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#perl -pi -e 's/windows-1251/utf-8/g' *.htm*
+for i in `find . -name '*.htm*'`; do perl -pi -e 's/windows-1251/utf-8/g' "$i"; done

@@ -1,0 +1,4 @@
+#!/bin/bash
+#atool
+
+aunpack -e  *.7z

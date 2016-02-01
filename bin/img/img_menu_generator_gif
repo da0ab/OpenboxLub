@@ -1,0 +1,8 @@
+#!/bin/bash
+PDF_FILES=*.gif*
+for f in $PDF_FILES
+do
+filename=${f%.*}
+echo "<img src=\"people/$filename.gif\" alt=\"\" title=\"\" />" >> menu.txt
+done
+
