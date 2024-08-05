@@ -1,11 +1,11 @@
 #!/bin/bash
 
- if wget https://github.com/da0ab/openboxing/blob/master/start.tar.gz?raw=true
+ if wget https://github.com/da0ab/OpenboxLub/archive/refs/heads/master.zip
+ 
 then
-   tar xfz *.tar.gz
+   tar xfz *.zip
 else
     echo ERROR
-
     exit 1
 fi
 
@@ -13,17 +13,14 @@ fi
 sudo apt-get update
 
 #lubuntu
-sudo apt-get install gmrun xxkb tint2 xfonts-terminus-oblique rxvt-unicode mc vim-gtk moc gimp inkscape filezilla keepassx gcolor2 gprename unrar p7zip
-
-# dropbox copy .VirtualBox skype google-chrome
-
+sudo apt-get install gmrun xxkb tint2 xfonts-terminus-oblique mc vim-gtk moc gimp inkscape filezilla keepassx unrar p7zip
 
 sudo chmod +s /sbin/halt
 sudo chmod +x -R ~/bin/
 sudo chmod +x -R ~/.config/openbox
 mkdir screen
 mkdir tmp
-ln -s ~/Copy/backup/fonts ~/.fonts
+#ln -s ~/Copy/backup/fonts ~/.fonts
 rm -r /user/share/gimp/2.0/brushes
 
 
