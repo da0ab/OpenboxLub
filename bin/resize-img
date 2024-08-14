@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.JPG' -o -iname '*.gif' -o -iname '*.png' \) -exec sh -c 'identify -format "%wx%h" "$1" | awk -F"x" "{ if (\$1 > 800 && \$2 > 800) print \"$1\" }"' _ {} \; -exec mogrify -resize 800x800 {} +

@@ -1,0 +1,39 @@
+
+#поиск
+grep -iRl "слово" /home/user/merion
+
+
+
+
+ for f in `ls *.png` ; do mv "$f" "small_$f" ; done
+ for f in `ls *.jpg` ; do mv "$f" "small_$f" ; done
+
+
+
+$ ls
+abcd1.txt abcd2.txt abcd3.txt
+$ rename 's/abc/xyz/' *
+$ ls
+xyzd1.txt xyzd2.txt xyzd3.txt
+
+$ rename -n 's/abc/xyz/' *
+rename(abcd1.txt, xyzd1.txt)
+rename(abcd2.txt, xyzd2.txt)
+rename(abcd3.txt, xyzd3.txt)
+
+$ rename -f 's/abc/xyz/' *
+$ rename 'y/a-z/A-Z/' *
+$ rename 'y/A-Z/a-z/' *
+
+$ ls
+Clouds of Sunset.mp3
+$ rename "s/ *//g" *
+$ ls
+CloudsofSunset.mp3
+
+
+$ rename 's/\.txt$/.doc/' *.txt
+
+-v - вывести список обработанных файлов;
+-n - тестовый режим, на самом деле никакие действия выполнены не будут;
+-f - принудительно перезаписывать существующие файлы;

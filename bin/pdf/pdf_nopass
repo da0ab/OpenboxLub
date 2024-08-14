@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir nopass
+PAPKA=nopass/
+PDF_FILES=*.pdf
+for f in $PDF_FILES
+do
+ echo "Processing $f file..."
+filename=${f%.*}
+ pdftk $f output $PAPKA$filename.pdf user_pw YOURPASSWORD-HERE owner_pw YOURPASSWORD
+done
+
+# pdftohtml  -q -opw YOURPASSWORD adesilex_lcr.pdf adesilex_lcr.html
+

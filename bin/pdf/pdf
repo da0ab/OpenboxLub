@@ -1,0 +1,22 @@
+
+ss xpdf
+
+
+pdftotext  -layout  11.pdf  11.txt
+
+
+
+ i=file_2; echo "$i" "${i%%_}_$((${i##_}+1))"
+find . -name '*.pdf' | while read i; do pdftotext -layout "${*/i%.pdf}_%d.txt" "$i"; done
+
+
+
+ i=file_2; echo "$i" "${i%%_}_$((${i##_}+1))"
+
+find . -name '*.pdf' | while read i; do pdftotext  -layout  "${i%.pdf}_%d.txt" "$i"; done
+
+
+
+
+pdftk 3.pdf output output.pdf user_pw YOURPASSWORD-HERE owner_pw YOURPASSWORD
+
