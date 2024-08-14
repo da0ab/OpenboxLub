@@ -1,8 +1,0 @@
-#!/bin/bash
-PDF_FILES=*.jpg*
-for f in $PDF_FILES
-do
-filename=${f%.*}
-echo "<div class=\"box600M\"><a href=\"i/$filename.jpg\"><img src=\"t/$filename.jpg\" alt=\"человечки\" title=\"человечки\" /></a></div>" >> menu.txt
-done
-

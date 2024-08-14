@@ -1,9 +1,0 @@
-#!/bin/bash
-
-mogrify -resize 70x100^ -quality 85  +profile "*" *.png &
-
-sleep 10
-
-
-convert -adjoin  -dispose Background -delay 5 *.png animation.gif 
-

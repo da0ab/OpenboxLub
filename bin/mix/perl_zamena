@@ -1,3 +1,0 @@
-
-perl -pi -e 's/windows-1251/utf-8/g' *.htm*
-

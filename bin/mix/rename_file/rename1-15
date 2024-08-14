@@ -1,4 +1,0 @@
-#!/bin/bash
-
- i=1; for name in *wav ; do mv "$name" "$i.wav" && let i++ ; done && rename 's/^(\d)$/0$1/' *
-

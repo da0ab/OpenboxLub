@@ -1,7 +1,0 @@
-#!/bin/bash
-#Используемое устройство, может быть и eth1 и т.д.
-DEVICE=eth0
-#собственно команда, которой присвоенна переменная MAC_ADDRESS
-MAC_ADDRESS=`ifconfig $DEVICE | awk '{print $5}' | head -n 1`
-#Выводим на экран 
-echo $MAC_ADDRESS

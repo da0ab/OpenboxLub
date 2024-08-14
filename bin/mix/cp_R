@@ -1,4 +1,0 @@
-
-#!/bin/bash
-
-for i in *; do if test -d "$i";  then  cp index.php "$i"; fi; done

@@ -1,3 +1,0 @@
-ffmpeg -f  image2 -r 8 -i foto-%d.jpg foto.mp4
-
-ffmpeg -f image2 -i foto-%d.jpg -i music.wav -r 8 video.mp4

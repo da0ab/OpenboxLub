@@ -1,4 +1,0 @@
-#!/bin/bash
-
-
-mogrify -format gif -loop 0  -resize  14x14 -filter box  *.{gif}
