@@ -1,2 +1,63 @@
+
 #!/bin/bash
-find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.JPG' -o -iname '*.gif' -o -iname '*.png' \) -exec sh -c 'identify -format "%wx%h" "$1" | awk -F"x" "{ if (\$1 > 800 && \$2 > 800) print \"$1\" }"' _ {} \; -exec mogrify -resize 800x800 {} +
+
+# Получите абсолютный путь до домашней директории
+HOME_DIR=$(eval echo ~$USER)
+
+# Определите путь к разрешенной директории
+ALLOWED_DIR="$HOME_DIR/TMP"
+
+# Функция для проверки, находится ли текущий каталог в разрешенном пути
+is_allowed_directory() {
+    local current_dir=$(pwd)
+    
+    # Проверяем, что текущий каталог не корень
+    if [ "$current_dir" = "/" ]; then
+        echo "Error: The script cannot be run from the root directory."
+        exit 1
+    fi
+
+    # Проверяем, находится ли текущий каталог в разрешенной директории
+    if [[ "$current_dir" != $ALLOWED_DIR* ]]; then
+        echo "Error: The script can only be run from within $ALLOWED_DIR or its subdirectories."
+        exit 1
+    fi
+}
+
+# Проверка директории
+is_allowed_directory
+
+# Проверьте, что размер передан как аргумент
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <width>x<height>"
+    exit 1
+fi
+
+# Получите размер из аргумента
+SIZE=$1
+
+# Проверьте, что размер имеет правильный формат
+if ! [[ $SIZE =~ ^[0-9]+x[0-9]+$ ]]; then
+    echo "Invalid size format. Use <width>x<height> (e.g., 800x800)"
+    exit 1
+fi
+
+# Разделите размер на ширину и высоту
+WIDTH=${SIZE%x*}
+HEIGHT=${SIZE#*x}
+
+# Выполните поиск и изменение размера изображений
+find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.JPG' -o -iname '*.gif' -o -iname '*.png' \) \
+    -exec bash -c '
+        for img; do
+            # Получите размеры изображения
+            dimensions=$(identify -format "%wx%h" "$img")
+            img_width=$(echo "$dimensions" | awk -Fx "{print \$1}")
+            img_height=$(echo "$dimensions" | awk -Fx "{print \$2}")
+
+            # Если изображение больше указанного размера, измените его
+            if [ "$img_width" -gt '"$WIDTH"' ] && [ "$img_height" -gt '"$HEIGHT"' ]; then
+                mogrify -resize '"$SIZE"' "$img"
+            fi
+        done
+    ' bash {} +
